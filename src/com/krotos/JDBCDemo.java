@@ -25,7 +25,6 @@ public class JDBCDemo {
                 System.out.println(myRs.getString("last_name")+", "+myRs.getString("first_name"));
             }
 
-
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
