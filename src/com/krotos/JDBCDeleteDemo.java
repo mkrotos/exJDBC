@@ -21,7 +21,7 @@ public class JDBCDeleteDemo {
             myStmt = myConn.createStatement();
 
             // 3. Change email of John
-            System.out.println("Deleting \n");
+            System.out.println("Deleting an employee \n");
 
             // 4.Delete all rows with Kazik Seba
             int rowsAffected = myStmt.executeUpdate(
