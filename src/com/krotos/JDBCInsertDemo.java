@@ -32,7 +32,8 @@ public class JDBCInsertDemo {
             myRs = myStmt.executeQuery("select * from employees order by last_name");
             // 5. Process the result set
             while (myRs.next()) {
-                System.out.println(myRs.getString("last_name") + ", " + myRs.getString("first_name"));
+                System.out.println(myRs.getString("last_name") + ", "
+                        + myRs.getString("first_name"));
             }
 
         } catch (SQLException e) {

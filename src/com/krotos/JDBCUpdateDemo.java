@@ -33,7 +33,8 @@ public class JDBCUpdateDemo {
             myRs = myStmt.executeQuery("select * from employees where first_name='John' and last_name='Doe'");
             // 5. Process the result set
             while (myRs.next()) {
-                System.out.println(myRs.getString("last_name") + ", " + myRs.getString("first_name")+", "+myRs.getString("email"));
+                System.out.println(myRs.getString("last_name") + ", "
+                        + myRs.getString("first_name")+", "+myRs.getString("email"));
             }
 
         } catch (SQLException e) {
