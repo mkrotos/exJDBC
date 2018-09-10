@@ -1,0 +1,2 @@
+# exJDBC
+Basic JDBC exercise
